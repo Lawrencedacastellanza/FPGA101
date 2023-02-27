@@ -1,0 +1,46 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'loren' on host 'laptop-tl7l85lt' (Windows NT_amd64 version 6.2) on Mon Feb 27 16:18:31 +0100 2023
+INFO: [HLS 200-10] In directory 'C:/Users/loren/AppData/Roaming/Xilinx/Vitis/testmem2V2'
+Sourcing Tcl script 'C:/Users/loren/AppData/Roaming/Xilinx/Vitis/testmem2V2/testmem/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/loren/AppData/Roaming/Xilinx/Vitis/testmem2V2/testmem/solution1/csynth.tcl
+INFO: [HLS 200-1510] Running: open_project testmem 
+INFO: [HLS 200-10] Opening project 'C:/Users/loren/AppData/Roaming/Xilinx/Vitis/testmem2V2/testmem'.
+INFO: [HLS 200-1510] Running: set_top kernel 
+INFO: [HLS 200-1510] Running: add_files testmem.cpp 
+INFO: [HLS 200-10] Adding design file 'testmem.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files testmem.hpp 
+INFO: [HLS 200-10] Adding design file 'testmem.hpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb testtestmem.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'testtestmem.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/loren/AppData/Roaming/Xilinx/Vitis/testmem2V2/testmem/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/Users/loren/AppData/Roaming/Xilinx/Vitis/testmem2V2/128
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output C:/Users/loren/AppData/Roaming/Xilinx/Vitis/testmem2V2/128 -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./testmem/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name kernel kernel 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 1.211 GB.
+INFO: [HLS 200-10] Analyzing design file 'testmem.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 12.521 seconds; current allocated memory: 1.211 GB.
+ERROR: [HLS 214-157] Top function not found: there is no function named 'kernel'
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 18.97 seconds; current allocated memory: 0.000 MB.
+Error in opt
+    while executing
+"source C:/Users/loren/AppData/Roaming/Xilinx/Vitis/testmem2V2/testmem/solution1/csynth.tcl"
+    invoked from within
+"hls::main C:/Users/loren/AppData/Roaming/Xilinx/Vitis/testmem2V2/testmem/solution1/csynth.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 25.916 seconds; peak allocated memory: 1.211 GB.

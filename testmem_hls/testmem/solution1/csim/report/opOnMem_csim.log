@@ -1,0 +1,38 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../testtestmem.cpp in debug mode
+csim.mk:73: recipe for target 'obj/testtestmem.o' failed
+In file included from C:/Xilinx/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/hls_fpo.h:189,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/hls_half_fpo.h:64,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/hls_half.h:71,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:98,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/ap_common.h:710,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/ap_int.h:56,
+                 from ../../../../testmem.hpp:6,
+                 from ../../../../testtestmem.cpp:2:
+C:/Xilinx/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from C:/Xilinx/Vitis_HLS/2022.1/include/hls_fpo.h:189:0,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/hls_half_fpo.h:64,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/hls_half.h:71,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:98,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/ap_common.h:710,
+                 from C:/Xilinx/Vitis_HLS/2022.1/include/ap_int.h:56,
+                 from ../../../../testmem.hpp:6,
+                 from ../../../../testtestmem.cpp:2:
+C:/Xilinx/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+../../../../testtestmem.cpp: In function 'void test(data_w*, int, int, clock_c*)':
+../../../../testtestmem.cpp:9:27: error: invalid operands of types 'const char [14]' and '<unresolved overloaded function type>' to binary 'operator<<'
+  std::cout<"test avviato "<< std::endl;
+            ~~~~~~~~~~~~~~~^~~~~~
+../../../../testtestmem.cpp: In function 'int main(int, char**)':
+../../../../testtestmem.cpp:22:25: error: cannot convert 'data_w** {aka ap_int<32>**}' to 'data_w* {aka ap_int<32>*}' for argument '1' to 'void test(data_w*, int, int, clock_c*)'
+  test(mem, rw, dati,time);
+                         ^
+make: *** [obj/testtestmem.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************
