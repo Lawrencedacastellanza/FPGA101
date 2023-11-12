@@ -49,7 +49,6 @@ The Pynq z2 uses a **three-way handshake** memory allocation system that takes t
 As you can see from the Line Chart below I have obtained nearly five times the datasheet-reported velocity of the Pynq (1050 Mbps).
 My hypothesis is that the problem is caused by my program which, doesn't wait for confirmation (of the three-way handshake) thus, resulting in a much faster memory-saving time than the limits of Pynq.
 
-![PYNQ-Z2 Write Speed](Graph.png)
 <img src="Graph.png" width="700" height="500">
 
 
