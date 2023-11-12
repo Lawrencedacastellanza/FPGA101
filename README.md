@@ -21,7 +21,7 @@ This project represents my first interaction with the world of FPGA. I followed 
 
  **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Lawrencedacastellanza/FPGA101.git
    cd your-repository
    ```
 ## Prerequisites
