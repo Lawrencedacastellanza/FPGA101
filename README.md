@@ -25,11 +25,9 @@ This project represents my first interaction with the world of FPGA. I followed 
    cd your-repository
    ```
 ## Prerequisites
-
-Make sure you have the following software installed on your development machine:
-- **PYNQ-Z2 board** - for testing the design on the actual hardware.
-  
-If you want to modify the code and create your own version:
+For testing the design on the actual hardware:
+- **PYNQ-Z2 board** 
+If you want to modify the code and create your own version make sure you have the following software installed on your development machine:
 - **Vivado** - for FPGA development.
 - **Vitis HLS** - for high-level synthesis.
 
