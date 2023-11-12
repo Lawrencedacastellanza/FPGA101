@@ -17,6 +17,14 @@ This project represents my first interaction with the world of FPGA. I followed 
 
 ## Getting Started
 
+### Installation
+
+ **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+   ```
+
 ### Prerequisites
 
 Make sure you have the following software installed on your development machine:
@@ -26,18 +34,10 @@ If you want to modify the code and create your own version:
 - **Vivado** - for FPGA development.
 - **Vitis HLS** - for high-level synthesis.
 
-### Installation
-
- **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
-   ```
-   
-## Configuration
+### Configuration
 
 1. You have to connect the Pynq z2 to your computer and open the hosted Jupiter notebook.
-2. Upload all the files of the pynqHost folder.
+2. Upload all the files contained in the pynqHost folder.
 3. Run the code
 
 if you want to modify the design and the program you must follow the points presented in the Overview section except that, instead of creating a new C++ file, you can import the testmem_hls folder into Vitis HSL.
