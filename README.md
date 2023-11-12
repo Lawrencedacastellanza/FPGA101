@@ -24,8 +24,7 @@ This project represents my first interaction with the world of FPGA. I followed 
    git clone https://github.com/your-username/your-repository.git
    cd your-repository
    ```
-
-### Prerequisites
+## Prerequisites
 
 Make sure you have the following software installed on your development machine:
 - **PYNQ-Z2 board** - for testing the design on the actual hardware.
@@ -34,7 +33,7 @@ If you want to modify the code and create your own version:
 - **Vivado** - for FPGA development.
 - **Vitis HLS** - for high-level synthesis.
 
-### Configuration
+## Configuration
 
 1. You have to connect the Pynq z2 to your computer and open the hosted Jupiter notebook.
 2. Upload all the files contained in the pynqHost folder.
