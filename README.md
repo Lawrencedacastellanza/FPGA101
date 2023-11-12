@@ -20,14 +20,46 @@ This project represents my first interaction with the world of FPGA. I followed 
 ### Prerequisites
 
 Make sure you have the following software installed on your development machine:
-
+- **PYNQ-Z2 board** - for testing the design on the actual hardware.
+  
+If you want to modify the code and create your own version:
 - **Vivado** - for FPGA development.
 - **Vitis HLS** - for high-level synthesis.
-- **PYNQ-Z2 board** - for testing the design on the actual hardware.
 
 ### Installation
 
-1. **Clone the Repository:**
+ **Clone the Repository:**
    ```bash
    git clone https://github.com/your-username/your-repository.git
    cd your-repository
+   ```
+   
+## Configuration
+
+1. You have to connect the Pynq z2 to your computer and open the hosted Jupiter notebook.
+2. Upload all the files of the pynqHost folder.
+3. Run the code
+
+if you want to modify the design and the program you must follow the points presented in the Overview section except that, instead of creating a new C++ file, you can import the testmem_hls folder into Vitis HSL.
+
+## Result
+
+The benchmark result shows that the bandwidth performance of the off-chip memory increases with a larger burst size. When using the same burst size, I noticed that the more data you write in memory, the more the writing velocity FPGA increases until it reaches a point where it stabilizes at about 1 Mbytes.
+
+### PYNQ-Z2 Write Speed
+
+![PYNQ-Z2 Write Speed](Graph.png)
+
+The graph above visually represents the write speed on the PYNQ-Z2, showing how it varies with different burst sizes and amounts of data.
+
+### Calculated Time and Velocity
+
+![Block Design](Table.png)
+
+The table above illustrates the calculated time and velocity for different burst sizes and amounts of data written.
+
+
+
+
+
+
