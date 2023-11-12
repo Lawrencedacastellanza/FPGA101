@@ -50,7 +50,7 @@ As you can see from the Line Chart below I have obtained nearly five times the d
 My hypothesis is that the problem is caused by my program which, doesn't wait for confirmation (of the three-way handshake) thus, resulting in a much faster memory-saving time than the limits of Pynq.
 
 ![PYNQ-Z2 Write Speed](Graph.png)
-<img src="Graph.png" width="100" height="100">
+<img src="Graph.png" width="1000" height="1000">
 
 
 
