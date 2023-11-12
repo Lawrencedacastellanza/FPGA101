@@ -21,9 +21,9 @@ This project represents my first interaction with the world of FPGA. I followed 
 
 Make sure you have the following software installed on your development machine:
 
-- [Vivado] - for FPGA development.
-- [Vitis HLS] - for high-level synthesis.
-- [PYNQ-Z2 board] - for testing the design on the actual hardware.
+- **Vivado** - for FPGA development.
+- **Vitis HLS** - for high-level synthesis.
+- **PYNQ-Z2 board** - for testing the design on the actual hardware.
 
 ### Installation
 
