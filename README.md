@@ -53,7 +53,7 @@ The graph above visually represents the write speed on the PYNQ-Z2, showing how 
 
 ### Calculated Time and Velocity
 
-![Block Design](Table.png)
+![Block Design](Table.PNG)
 
 The table above illustrates the calculated time and velocity for different burst sizes and amounts of data written.
 
