@@ -35,7 +35,7 @@ If you want to modify the code and create your own version:
 
 ## Configuration
 
-1. You have to connect the Pynq z2 to your computer and open the hosted Jupiter notebook.
+1. You have to connect the Pynq z2 to your computer and open the hosted Jupiter notebook. [PYNQ-Z2 Setup Guide](https://pynq.readthedocs.io/en/v2.3/getting_started/pynq_z2_setup.html)!
 2. Upload all the files contained in the pynqHost folder.
 3. Run the code
 
