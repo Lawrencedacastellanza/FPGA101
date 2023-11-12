@@ -13,8 +13,6 @@ This project represents my first interaction with the world of FPGA. I followed 
 3. Exporting the RTL file and importing the created IP on a Pynq-Z2 Vivado project.
 4. Using the generated bitstream to write the host file on the Jupiter notebook hosted by the Pynq-Z2.
 
----
-
 ## Getting Started
 
 ### Installation
