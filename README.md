@@ -42,8 +42,8 @@ if you want to modify the design and the program you must follow the points pres
 
 ## Result
 
-The benchmark result shows that the bandwidth performance of the off-chip memory increases with a larger burst size. This is caused by the three-way handshake When using the same burst size, I noticed that the more data you write in memory, the more the writing velocity FPGA increases until it reaches a point where it stabilizes at about 1 Mbytes.
-The Pynq z2 uses a **three-way handshake** memory allocation system that takes the same amount of time regardless of how large the burst is. With smaller data packets it carries less data by doing more handshake. 
+The benchmark result shows that the bandwidth performance of the off-chip memory increases with a larger burst size. 
+This is caused by the Pynq z2 which uses a **three-way handshake** memory allocation system that takes the same amount of time regardless of how large the burst is. With smaller data packets it carries less data by doing more handshake. 
 
 ### PYNQ-Z2 Write Speed obtained with my program
 As you can see from the Line Chart below I have obtained nearly five times the datasheet-reported velocity of the Pynq (1050 Mbps).
