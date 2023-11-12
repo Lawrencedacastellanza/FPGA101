@@ -45,17 +45,6 @@ if you want to modify the design and the program you must follow the points pres
 
 The benchmark result shows that the bandwidth performance of the off-chip memory increases with a larger burst size. When using the same burst size, I noticed that the more data you write in memory, the more the writing velocity FPGA increases until it reaches a point where it stabilizes at about 1 Mbytes.
 
-### PYNQ-Z2 Write Speed
-
-![PYNQ-Z2 Write Speed](Graph.png)
-
-The graph above visually represents the write speed on the PYNQ-Z2, showing how it varies with different burst sizes and amounts of data.
-
-### Calculated Time and Velocity
-
-![Block Design](Table.PNG)
-
-The table above illustrates the calculated time and velocity for different burst sizes and amounts of data written.
 
 
 
